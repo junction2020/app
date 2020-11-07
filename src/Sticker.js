@@ -4,7 +4,6 @@ import {stickers} from "./data";
 import {barChartData, barChartOptions} from "./chart-data";
 import { Bar } from 'react-chartjs-2';
 
-
 class Sticker extends Component {
     render() {
     return (
