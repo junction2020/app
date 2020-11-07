@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import './assets/main.css'
-import Header from "./Header";
 import Reader from "./Reader";
 
 class QR extends Component {
