@@ -31,7 +31,7 @@ class Goals extends Component {
                             </p>
                         </div>
                         <div class="px-6 pb-6">
-                            <div class="shadow w-full rounded bg-grey-light mt-2">
+                            <div class="w-full rounded bg-grey-light mt-2">
                                 <div class="bg-yellow-600 rounded text-xs leading-none py-1 text-center text-white" style={{width: "55%"}}>55%</div>
                             </div>
                         </div>
