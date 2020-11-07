@@ -26,6 +26,7 @@ code {
   width: 55.333333%!important;
 }
 
-/*.stickercontainer {*/
-/*  background-image: linear-gradient(#c6f6d5, #2f855a);*/
-/*}*/
+.placeholder_chicken {
+  width: 51px;
+  height: 51px;
+}

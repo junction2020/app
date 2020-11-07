@@ -60,53 +60,43 @@ export const cards = [
 
 export const stickers = [
   {
-    sticker_image:
-      "https://sticker.place/stickers/monchotheunicorn/sticker_01.png",
+    sticker_image: chickenjpg,
     brand: brands[0],
   },
   {
-    sticker_image:
-      "https://sticker.place/stickers/monchotheunicorn/sticker_02.png",
+    sticker_image: chickenjpg,
     brand: brands[1],
   },
   {
-    sticker_image:
-      "https://sticker.place/stickers/monchotheunicorn/sticker_03.png",
+    sticker_image: chickenjpg,
     brand: brands[2],
   },
   {
-    sticker_image:
-      "https://sticker.place/stickers/monchotheunicorn/sticker_01.png",
+    sticker_image: chickenjpg,
     brand: brands[0],
   },
   {
-    sticker_image:
-      "https://sticker.place/stickers/monchotheunicorn/sticker_01.png",
+    sticker_image: chickenjpg,
     brand: brands[0],
   },
   {
-    sticker_image:
-      "https://sticker.place/stickers/monchotheunicorn/sticker_01.png",
+    sticker_image: chickenjpg,
     brand: brands[0],
   },
   {
-    sticker_image:
-      "https://sticker.place/stickers/monchotheunicorn/sticker_01.png",
+    sticker_image: chickenjpg,
     brand: brands[0],
   },
   {
-    sticker_image:
-      "https://sticker.place/stickers/monchotheunicorn/sticker_01.png",
+    sticker_image: chickenjpg,
     brand: brands[0],
   },
   {
-    sticker_image:
-      "https://sticker.place/stickers/monchotheunicorn/sticker_01.png",
+    sticker_image: chickenjpg,
     brand: brands[0],
   },
   {
-    sticker_image:
-      "https://sticker.place/stickers/monchotheunicorn/sticker_01.png",
+    sticker_image: chickenjpg,
     brand: brands[0],
   },
   {
