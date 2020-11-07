@@ -16,7 +16,7 @@ class Goals extends Component {
         return (
             <div class="mt-20 container mx-auto">
             <div className="flex flex-wrap">
-                {[0,1,2,3,4,5,6].map((obj,i) => (
+                {[0,1,2,3,4].map((obj,i) => (
                 <div key={i} className="h-auto items-stretch w-1/3 mb-12 h-12">
                     <div class="relative max-w-sm rounded overflow-hidden shadow-lg">
                         <div class="absolute right-0 top-0 mt-2">
