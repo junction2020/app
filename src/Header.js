@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 class Header extends Component {
@@ -9,8 +10,13 @@ class Header extends Component {
                 <div className="p-4 flex flex-row items-center justify-between">
                     <a href="#" className="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg focus:outline-none focus:shadow-outline">Nog niet echt een naam nog</a>
                 </div>
-                <nav className="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-                    <a className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded md:mt-0" href="#">Home</a>
+                <nav className="flex-col space-x-4 flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+                    <Link type="button" to="/" className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded md:mt-0">
+                        Home
+                    </Link>
+                    <Link type="button" to="/qr" className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded md:mt-0">
+                        QR
+                    </Link>
                 </nav>
             </div>
             </div>
