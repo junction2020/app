@@ -1,13 +1,18 @@
-import './App.css';
+import { Component } from 'react';
+import './assets/main.css'
+import Image from "./Image";
+import Header from "./Header";
 
-function App() {
-  return (
-    <div className="app">
-      <header className="app-header">
-        Super mega awesome!
-      </header>
+class App extends Component {
+  render() {
+    return (
+    <div>
+      <Header />
+      <div className="mt-20 container mx-auto">
+        <Image />
+      </div>
     </div>
-  );
+  )};
 }
 
 export default App;
