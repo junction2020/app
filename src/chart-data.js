@@ -1,18 +1,29 @@
+const farmData = [
+	[{"footprint": 23, "co2": 12, "sq_animal": 4, "lifespan": 1.0, "outdoor": "yes", "antibiotic": "no"},
+	{"footprint": 26, "co2": 12, "sq_animal": 2, "lifespan": 0.1, "outdoor": "no", "antibiotic": "yes"}],
+	[{"footprint": 349, "co2": 14, "sq_animal": 5, "lifespan": 1.0, "outdoor": "yes", "antibiotic": "no"},
+	{"footprint": 520, "co2": 14, "sq_animal": 2, "lifespan": 0.5, "outdoor": "no", "antibiotic": "yes"}],
+	[{"footprint": 520, "co2": 2300, "sq_animal": 10, "lifespan": 3.0, "outdoor": "yes", "antibiotic": "no"},
+	{"footprint": 630, "co2": 2300, "sq_animal": 5, "lifespan": 1.5, "outdoor": "no", "antibiotic": "yes"}]
+];
+
 export const barChartData = (i) => {
-	let data = [farmData[i].water_use, farmData[i].drink_use, farmData[i].wash_use];
 	return {
 		labels: [
-			'Water use 💧',
-			'Drink use 🚰',
-			'Wash use 🧼'
+			"Footprint", "CO2", "Sq. per animal", "Lifespan"
 		],
 		datasets: [{
-			label: 'Water use',
-			data: data,
+			label: 'HKScan',
+			data: [farmData[i][0].footprint, farmData[i][0].co2, farmData[i][0].sq_animal, farmData[i][0].lifespan],
 			backgroundColor: ["#843AF4", "#FA00BD", "#FF3582", "#FF8455", "#FFC448", "#F9F871"]
+		},
+		{
+			label: 'Rest',
+			data: [farmData[i][1].footprint, farmData[i][1].co2, farmData[i][1].sq_animal, farmData[i][1].lifespan],
+			backgroundColor: ["#E9EFF4"]
 		}]
-	};
-};
+	}
+};	
 
 export const barChartOptions = {
 	legend: {
@@ -37,11 +48,25 @@ export const barChartOptions = {
 			}
 		}],
 		yAxes: [{
+
+			type: 'logarithmic',
+			position: 'left',
 			ticks: {
 				fontSize: 16,
 				fontColor: "#343434",
 				beginAtZero: true,
-				max: 4000
+				callback: function (value, index, values) {
+					return Number(value.toString());//pass tick values as a string into Number function
+				}
+			},
+			afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
+				chartObj.ticks = [];
+				chartObj.ticks.push(0.1);
+				chartObj.ticks.push(1);
+				chartObj.ticks.push(10);
+				chartObj.ticks.push(100);
+				chartObj.ticks.push(1000);
+				chartObj.ticks.push(10000);
 			}
 		}]
 
@@ -50,17 +75,3 @@ export const barChartOptions = {
 		enabled: false
 	}
 };
-
-
-export const farmData = [
-	{"amount": 455000, "water_use": 3035.5, "drink_use": 2825.5, "wash_use": 210},
-	{"amount": 433000, "water_use": 2801.5, "drink_use": 2611.5, "wash_use": 190},
-	{"amount": 495000, "water_use": 3200, "drink_use": 3000, "wash_use": 200},
-	{"amount": 450000, "water_use": 2998, "drink_use": 2788, "wash_use": 210},
-	{"amount": 452000, "water_use": 3010, "drink_use": 2840, "wash_use": 170},
-	{"amount": 470000, "water_use": 3244, "drink_use": 3044, "wash_use": 200},
-	{"amount": 425000, "water_use": 2800, "drink_use": 2610, "wash_use": 190},
-	{"amount": 420000, "water_use": 2750, "drink_use": 2540, "wash_use": 210},
-	{"amount": 456000, "water_use": 3100, "drink_use": 2900, "wash_use": 200},
-	{"amount": 455000, "water_use": 2900, "drink_use": 2670, "wash_use": 230}
-]
