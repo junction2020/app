@@ -1,9 +1,13 @@
 import windmillJpg from "./assets/real_windmills.jpg";
 import chickenjpg from "./assets/chicken-vector-illustration.png";
+import hkLogo from "./assets/hk-logo-small.png";
+import kariniemenLogo from "./assets/kariniemen_logo_135px.png";
+import viaLogo from "./assets/via-logo.png";
+
 export const brands = [
-  { name: "Kariniemen" },
-  { name: "HK" },
-  { name: "Viamaailma" },
+  { name: "Kariniemen", logo: kariniemenLogo },
+  { name: "HK", logo: hkLogo },
+  { name: "Viamaailma", logo: viaLogo },
 ];
 
 export const goals = [
