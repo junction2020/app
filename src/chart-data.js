@@ -28,6 +28,7 @@ export const barChartData = (i) => {
 };	
 
 export const barChartOptions = {
+	maintainAspectRatio: false,
 	legend: {
 		display: true,
 		labels: {
