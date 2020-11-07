@@ -25,3 +25,7 @@ code {
 .stickercard {
   width: 55.333333%!important;
 }
+
+.stickercontainer {
+  background: #c6f6d5;
+}
