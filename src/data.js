@@ -54,7 +54,16 @@ export const cards = [
 ]
 
 export const stickers = [
-    { sticker_image: "https://sticker.place/stickers/monchotheunicorn/sticker_01.png", brand: brands[0] },
-    { sticker_image: "https://sticker.place/stickers/monchotheunicorn/sticker_02.png", brand: brands[1] },
-    { sticker_image: "https://sticker.place/stickers/monchotheunicorn/sticker_01.png", brand: brands[2] },
+    { // 0
+        sticker_image: "https://sticker.place/stickers/monchotheunicorn/sticker_01.png", 
+        brand: brands[0]
+    },
+    { // 1
+        sticker_image: "https://sticker.place/stickers/monchotheunicorn/sticker_02.png",
+        brand: brands[1]
+    },
+    { // 2
+        sticker_image: "https://sticker.place/stickers/monchotheunicorn/sticker_01.png",
+        brand: brands[2]
+    },
 ];
