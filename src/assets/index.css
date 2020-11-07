@@ -21,3 +21,11 @@ code {
 .img-gray {
     filter: contrast(0) sepia(100%) hue-rotate(116deg) brightness(1.2) saturate(0.0);
 }
+
+.stickercard {
+  width: 55.333333%!important;
+}
+
+/*.stickercontainer {*/
+/*  background-image: linear-gradient(#c6f6d5, #2f855a);*/
+/*}*/
