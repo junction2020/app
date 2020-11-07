@@ -1,10 +1,10 @@
 import windmillJpg from "./assets/real_windmills.jpg";
 
 export const brands = [
-    { name: "Kariniemen" },
-    { name: "HK" },
-    { name: "Viamaailma" },
-]
+  { name: "Kariniemen" },
+  { name: "HK" },
+  { name: "Viamaailma" },
+];
 
 export const goals = [
     {
@@ -45,16 +45,88 @@ export const goals = [
 ]
 
 export const cards = [
-    {
-        completed: true,
-    },
-    {
-        completed: false,
-    }
-]
+  {
+    completed: true,
+  },
+  {
+    completed: false,
+  },
+];
 
 export const stickers = [
-    { sticker_image: "https://sticker.place/stickers/monchotheunicorn/sticker_01.png", brand: brands[0] },
-    { sticker_image: "https://sticker.place/stickers/monchotheunicorn/sticker_02.png", brand: brands[1] },
-    { sticker_image: "https://sticker.place/stickers/monchotheunicorn/sticker_01.png", brand: brands[2] },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_01.png",
+    brand: brands[0],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_02.png",
+    brand: brands[1],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_03.png",
+    brand: brands[2],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_04.png",
+    brand: brands[2],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_04.png",
+    brand: brands[2],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_04.png",
+    brand: brands[2],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_04.png",
+    brand: brands[2],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_04.png",
+    brand: brands[2],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_04.png",
+    brand: brands[2],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_04.png",
+    brand: brands[2],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_04.png",
+    brand: brands[2],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_04.png",
+    brand: brands[2],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_04.png",
+    brand: brands[2],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_04.png",
+    brand: brands[2],
+  },
+  {
+    sticker_image:
+      "https://sticker.place/stickers/monchotheunicorn/sticker_04.png",
+    brand: brands[2],
+  },
 ];

@@ -45,6 +45,7 @@
   "devDependencies": {
     "autoprefixer": "^10.0.1",
     "postcss-cli": "^8.2.0",
+    "prettier": "2.1.2",
     "react-qr-code": "^1.0.3",
     "react-qr-reader": "^2.2.1",
     "tailwindcss": "^1.9.6"
