@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import QrReader from 'react-qr-reader'
 import { withRouter } from "react-router-dom";
+import * as stickers from "./stickerManager";
  
 class Reader extends Component {
   constructor(props) {
@@ -13,7 +14,8 @@ class Reader extends Component {
   
   handleScan = data => {
     if (data) {
-      this.props.history.push(`/sticker/${data}`)
+      this.props.history.push(`/`)
+      stickers.generateNewSticker(data);
       this.setState({
         result: data
       })
