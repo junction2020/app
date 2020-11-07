@@ -19,7 +19,7 @@ class Goals extends Component {
                 <thead>
                     <tr>
                     <th class="w-1/9 px-4 py-2">Goal</th>
-                    <th class="w-1/9 px-4 py-2">Source</th>
+                    <th class="w-1/9 px-4 py-2">Company</th>
                     <th class="w-2/3 px-4 py-2">Description</th>
                     <th class="w-1/9 px-4 py-2">Action</th>
                     </tr>
