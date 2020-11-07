@@ -11,7 +11,6 @@ class Sticker extends Component {
 
   )};
 
-
 }
 
 export default Sticker;
