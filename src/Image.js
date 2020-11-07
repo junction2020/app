@@ -36,7 +36,7 @@ class Image extends Component {
       // Request made to the backend api 
       // Send formData object 
       //TODO
-      // axios.post("api/uploadfile", formData); 
+      axios.post("localhost:5000/upload", formData); 
     }; 
      
     // File content to be displayed after 
