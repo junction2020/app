@@ -6,7 +6,8 @@ class Image extends Component {
     state = { 
   
       // Initially, no file is selected 
-      selectedFile: null
+      selectedFile: null,
+      response: null,
     }; 
      
     // On file select (from the pop up) 
@@ -36,7 +37,10 @@ class Image extends Component {
       // Request made to the backend api 
       // Send formData object 
       //TODO
-      axios.post("localhost:5000/upload", formData); 
+      let res = axios.post("http://127.0.0.1:5000/upload", formData); 
+      this.setState({
+        response: res.status
+      })
     }; 
      
     // File content to be displayed after 
@@ -72,6 +76,9 @@ class Image extends Component {
             Upload! 
           </button> 
           {this.fileData()} 
+          <div class="mt-12 text-lg">
+            {this.state.status}
+          </div>
         </div> 
       ); 
     } 
