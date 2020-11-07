@@ -2,10 +2,14 @@ import { Component } from 'react';
 import './assets/main.css'
 import {stickers} from "./data";
 import {barChartData, barChartOptions} from "./chart-data";
-import { Bar } from 'react-chartjs-2';
-
+import { Chart, Bar } from 'react-chartjs-2';
 
 class Sticker extends Component {
+    componentWillMount() {
+        Chart.Legend.prototype.afterFit = function() {
+            this.height = this.height + 50;
+        };
+    }
     render() {
     return (
         <div className="mt-20 container mx-auto">

@@ -8,26 +8,28 @@ const farmData = [
 ];
 
 export const barChartData = (i) => {
+	let hkscan = Object.values(farmData[i][0]).filter((item, i) => i<4).map(val => val+(Math.random()-0.5)*val )
+	let rest = Object.values(farmData[i][1]).filter((item, i) => i<4).map(val => val+(Math.random()-0.5)*val )
 	return {
 		labels: [
 			"Footprint", "CO2", "Sq. per animal", "Lifespan"
 		],
 		datasets: [{
 			label: 'HKScan',
-			data: [farmData[i][0].footprint, farmData[i][0].co2, farmData[i][0].sq_animal, farmData[i][0].lifespan],
-			backgroundColor: ["#843AF4", "#FA00BD", "#FF3582", "#FF8455", "#FFC448", "#F9F871"]
+			data: hkscan,
+			backgroundColor: ["#843AF4", "#843AF4", "#843AF4", "#843AF4"]
 		},
 		{
 			label: 'Rest',
-			data: [farmData[i][1].footprint, farmData[i][1].co2, farmData[i][1].sq_animal, farmData[i][1].lifespan],
-			backgroundColor: ["#E9EFF4"]
+			data: rest,
+			backgroundColor: ["#FA00BD", "#FA00BD", "#FA00BD", "#FA00BD"]
 		}]
 	}
 };	
 
 export const barChartOptions = {
 	legend: {
-		display: false,
+		display: true,
 		labels: {
 			// This more specific font property overrides the global property
 			fontColor: '#343434',
@@ -66,7 +68,6 @@ export const barChartOptions = {
 				chartObj.ticks.push(10);
 				chartObj.ticks.push(100);
 				chartObj.ticks.push(1000);
-				chartObj.ticks.push(10000);
 			}
 		}]
 
