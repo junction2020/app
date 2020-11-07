@@ -12,8 +12,8 @@ class StickerPage extends Component {
               <Link to={"sticker/" + i}>
                 <div className="rounded-full h-auto w-70 p-5 ml-20 mr-20 flex items-center justify-center bg-gray-300">
                   <img
-                    className={`object-contain w-full placeholder_chicken img-gray`}
-                    src={sticker.sticker_image}
+                    className={`object-contain w-full placeholder_chicken`}
+                    src={sticker.brand.logo}
                     alt={"unicorn" + i}
                   />
                 </div>
