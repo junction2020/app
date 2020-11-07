@@ -31,7 +31,8 @@ export const barChartOptions = {
                 display:false
 			},
 			ticks: {
-				fontSize: 24,
+				fontSize: 16,
+				fontStyle: "bold",
 				fontColor: "#343434"
 			}
 		}],
