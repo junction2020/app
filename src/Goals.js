@@ -29,7 +29,10 @@ class Goals extends Component {
                     <td class="border px-4 py-2">Est platea</td>
                     <td class="border px-4 py-2">Est platea</td>
                     <td class="border px-4 py-2">
-                        <p>Taciti malesuada semper metus fusce vivamus iaculis egestas turpis ultricies faucibus, feugiat nisi habitasse sociosqu nascetur est sollicitudin platea <br /> Eleifend egestas porta quisque tincidunt dictumst hendrerit sagittis nostra tempus ridiculus turpis habitasse dapibus, ornare scelerisque auctor rutrum et a nisi diam est etiam laoreet <br /> Aptent est torquent consectetur proin sodales quam eget fames vestibulum fermentum senectus metus erat, blandit mattis leo felis vehicula ultrices enim dapibus porttitor ad ornare.</p>
+                        <p>Taciti malesuada semper metus fusce vivamus iaculis egestas turpis ultricies faucibus, feugiat nisi habitasse sociosqu nascetur est sollicitudin platea</p>
+                        <img src="https://picsum.photos/300/200" alt="beautiful"/>
+                        <p>Eleifend egestas porta quisque tincidunt dictumst hendrerit sagittis nostra tempus ridiculus turpis habitasse dapibus, ornare scelerisque auctor rutrum et a nisi diam est etiam laoreet <br />
+                        Aptent est torquent consectetur proin sodales quam eget fames vestibulum fermentum senectus metus erat, blandit mattis leo felis vehicula ultrices enim dapibus porttitor ad ornare.</p>
                     </td>
                     <td class="border px-4 py-2">
                         <button disabled className={`bg-blue-500 text-white font-bold py-2 px-4 rounded ${this.state.isToggleOn ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-700"}`}
@@ -40,7 +43,9 @@ class Goals extends Component {
                     <td class="border px-4 py-2">Venenatis tellus</td>
                     <td class="border px-4 py-2">Venenatis tellus</td>
                     <td class="border px-4 py-2">
-                        <p>Sociis facilisi pretium class phasellus justo at donec felis facilisis amet hac, etiam lacus rutrum sollicitudin quam odio a egestas elit tellus <br /> Imperdiet venenatis bibendum tincidunt lobortis suspendisse accumsan eleifend fusce eros et felis urna, consectetur nisi inceptos senectus nibh egestas erat amet sodales quisque <br /> Dictum per est vulputate magnis ultrices praesent curae viverra pulvinar orci varius erat bibendum ultricies, eleifend ad blandit cras diam conubia augue consectetur dolor accumsan condimentum rutrum integer.</p>
+                        <p>Sociis facilisi pretium class phasellus justo at donec felis facilisis amet hac, etiam lacus rutrum sollicitudin quam odio a egestas elit tellus <br />
+                        Imperdiet venenatis bibendum tincidunt lobortis suspendisse accumsan eleifend fusce eros et felis urna, consectetur nisi inceptos senectus nibh egestas erat amet sodales quisque <br />
+                        Dictum per est vulputate magnis ultrices praesent curae viverra pulvinar orci varius erat bibendum ultricies, eleifend ad blandit cras diam conubia augue consectetur dolor accumsan condimentum rutrum integer.</p>
                     </td>
                     <td class="border px-4 py-2">
                         <button disabled className={`bg-blue-500 text-white font-bold py-2 px-4 rounded ${this.state.isToggleOn ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-700"}`}
@@ -51,7 +56,9 @@ class Goals extends Component {
                     <td class="border px-4 py-2">Ligula consectetur</td>
                     <td class="border px-4 py-2">Ligula consectetur</td>
                     <td class="border px-4 py-2">
-                        <p>Ac urna hac quisque suscipit conubia, elit ridiculus sollicitudin est, hendrerit aliquet facilisis molestie <br /> Sit eleifend ad aliquam lectus donec nec placerat adipiscing vehicula, tempus nam ipsum hac parturient felis nulla rhoncus, nullam a sed taciti velit cubilia nostra magnis <br /> Consequat dui malesuada netus risus ad curae dolor suscipit potenti metus, inceptos mi nisi integer laoreet lorem nullam leo facilisis, aliquet in parturient elit varius rutrum duis quam convallis.</p>
+                        <p>Ac urna hac quisque suscipit conubia, elit ridiculus sollicitudin est, hendrerit aliquet facilisis molestie <br />
+                        Sit eleifend ad aliquam lectus donec nec placerat adipiscing vehicula, tempus nam ipsum hac parturient felis nulla rhoncus, nullam a sed taciti velit cubilia nostra magnis <br />
+                        Consequat dui malesuada netus risus ad curae dolor suscipit potenti metus, inceptos mi nisi integer laoreet lorem nullam leo facilisis, aliquet in parturient elit varius rutrum duis quam convallis.</p>
                     </td>
                     <td class="border px-4 py-2">
                         <button disabled className={`bg-blue-500 text-white font-bold py-2 px-4 rounded ${this.state.isToggleOn ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-700"}`}
