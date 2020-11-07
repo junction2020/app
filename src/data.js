@@ -5,9 +5,9 @@ import kariniemenLogo from "./assets/kariniemen_logo_135px.png";
 import viaLogo from "./assets/via-logo.png";
 
 export const brands = [
-  { name: "Kariniemen", logo: kariniemenLogo },
-  { name: "HK", logo: hkLogo },
-  { name: "Viamaailma", logo: viaLogo },
+  { name: "Kariniemen", logo: kariniemenLogo, produce: ["chicken"] },
+  { name: "HK", logo: hkLogo, produce: ["pork", "beef"] },
+  { name: "Viamaailma", logo: viaLogo, produce: ["chicken", "pork", "beef"] },
 ];
 
 export const goals = [
