@@ -22,6 +22,15 @@ export const goals = [
     },
 ]
 
+export const cards = [
+    {
+        completed: true,
+    },
+    {
+        completed: false,
+    }
+]
+
 export const stickers = [
     { sticker_image: "https://sticker.place/stickers/monchotheunicorn/sticker_01.png", brand: brands[0] },
     { sticker_image: "https://sticker.place/stickers/monchotheunicorn/sticker_02.png", brand: brands[1] },

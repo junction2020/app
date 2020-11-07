@@ -6,7 +6,7 @@ class Sticker extends Component {
   render() {
     return (
     <div className="mt-20 container mx-auto">
-        {this.props.match.params.id} {stickers[this.props.match.params.id].brand}
+        {this.props.match.params.id} {stickers[this.props.match.params.id].brand.name}
     </div>
 
   )};
