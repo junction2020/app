@@ -4,6 +4,9 @@ export function loadStickers() {
     let stickers = localStorage.getItem("stickers");
     if (stickers) {
         return JSON.parse(stickers);
+    } else {
+        localStorage.setItem("stickers", JSON.stringify([]));
+        return []
     }
 }
 

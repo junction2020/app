@@ -5,7 +5,6 @@ import chickenjpg from "./assets/chicken-vector-illustration.png";
 class StickerPage extends Component {
   constructor(props) {
     super(props);
-    this.state = { activatedStickers: [] };
   }
 
   render() {

@@ -22,12 +22,12 @@ export const barChartData = (i) => {
 		{
 			label: 'Rest',
 			data: rest,
-			backgroundColor: ["#FA00BD", "#FA00BD", "#FA00BD", "#FA00BD"]
 		}]
 	}
 };	
 
 export const barChartOptions = {
+	maintainAspectRatio: false,
 	legend: {
 		display: true,
 		labels: {
