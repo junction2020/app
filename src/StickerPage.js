@@ -2,9 +2,6 @@ import { Link } from "react-router-dom";
 import { Component } from "react";
 
 class StickerPage extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

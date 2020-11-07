@@ -18,10 +18,10 @@ class Goals extends Component {
     console.log("Goals available:", goals);
     return (
       <div className="mt-20 container mx-auto">
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap -mx-2">
           {goals.map((goal, i) => (
-            <div key={i} className="h-auto items-stretch w-1/3 mb-12 h-12">
-              <div className="relative max-w-sm rounded overflow-hidden shadow-lg h-full">
+            <div key={i} className="flex h-auto items-stretch w-full sm:w-1/2 md:w-1/3 mb-12 h-12 px-4">
+              <div className="relative rounded overflow-hidden shadow-lg h-full">
                 <div className="absolute right-0 top-0 mt-2">
                   <span className="inline-block text-gray-900 bg-gray-200 rounded px-3 py-1 text-sm font-semibold mr-2 mb-2">
                     active
