@@ -21,7 +21,7 @@ class StickerPage extends Component {
               </Link>
             </div>
           ))}
-          {this.props.stickers.length < 14 &&
+          {this.props.stickers.length < 15 &&
             [...Array(15 - this.props.stickers.length)].map((_, index) => (
               <div key={index} className="h-auto items-stretch w-1/3 mb-12 h-3">
                 <div className="rounded-full h-auto w-70 p-5 ml-20 mr-20 flex items-center justify-center bg-gray-300">

@@ -27,12 +27,23 @@ class Home extends Component {
     this.setState({ pageIndex, currentPage });
   };
 
+  nextPage = () => {
+    let pageIndex = this.state.pageIndex + 1;
+    let currentPage = stickerManager.getStickersByPage(pageIndex);
+    this.setState({ pageIndex, currentPage });
+  };
+
   render() {
     console.log(this.state.currentPage);
     return (
       <div>
-        <button onClick={this.previousPage}>Vorige</button>
+        {this.state.pageIndex > 0 && (
+          <button onClick={this.previousPage}>Vorige</button>
+        )}
         <StickerPage stickers={this.state.currentPage} />
+        {this.state.pageIndex < this.state.amountOfPages - 1 && (
+          <button onClick={this.nextPage}>Volgende</button>
+        )}
       </div>
     );
   }
