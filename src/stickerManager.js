@@ -1,4 +1,4 @@
-import { stickers as stickerJson, brands } from "./data";
+import { stickers as stickerJson, brands, stickers } from "./data";
 
 export function loadStickers() {
     let stickers = localStorage.getItem("stickers");
@@ -39,4 +39,11 @@ export function generateNewSticker(id) {
 export function getAmountOfPages() {
     let amountOfStickers = loadStickers().length;
     return Math.ceil(amountOfStickers / 15);
+}
+
+export function getStickersByPage(pageIndex) {
+    let stickers = loadStickers();
+    let begin = pageIndex * 15; 
+    let end = begin + 15;
+    return stickers.slice(begin, end);
 }
