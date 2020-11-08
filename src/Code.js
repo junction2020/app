@@ -7,7 +7,7 @@ class Sticker extends Component {
   render() {
     return (
     <div className="mt-20 container mx-auto">
-        <QRCode value="0" />
+        <QRCode value="markmoestweerperseeenandereqrcode" />
     </div>
 
   )};
