@@ -45,13 +45,13 @@ export function getStickersByPage(pageIndex) {
 }
 
 export function getPledgedPages() {
-  let pledgedPages = localStorage.getItem("pledgedPages");
-  if (pledgedPages) {
-    return JSON.parse(pledgedPages);
-  } else {
-    localStorage.setItem("pledgedPages", JSON.stringify([]));
-    return [];
-  }
+    let pledgedPages = localStorage.getItem("pledgedPages");
+    if (pledgedPages) {
+        return JSON.parse(pledgedPages);
+    } else {
+        localStorage.setItem("pledgedPages", JSON.stringify([]));
+        return [];
+    }
 }
 
 export function isPagePledged(pageIndex) {
