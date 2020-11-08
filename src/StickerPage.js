@@ -6,6 +6,10 @@ import ReactTooltip from "react-tooltip";
 import * as moment from "moment";
 
 class StickerPage extends Component {
+  componentDidUpdate() {
+    ReactTooltip.rebuild();
+  }
+
   render() {
     return (
       <div className="mt-10 container mx-auto w-full lg:w-4/5 xl:w-1/2">
