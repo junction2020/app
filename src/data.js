@@ -3,10 +3,14 @@ import chickenjpg from "./assets/chicken-vector-illustration.png";
 import wheatfield from "./assets/wheatfield.jpg";
 import chickensauna from "./assets/sauna.jpg";
 import parkinglot from "./assets/parkinglot.jpg";
+import hkLogo from "./assets/hk-logo-small.png";
+import kariniemenLogo from "./assets/kariniemen_logo_135px.png";
+import viaLogo from "./assets/via-logo.png";
+
 export const brands = [
-  { name: "Kariniemen" },
-  { name: "HK" },
-  { name: "Viamaailma" },
+  { name: "Kariniemen", logo: kariniemenLogo, produce: ["chicken"] },
+  { name: "HK", logo: hkLogo, produce: ["pork", "beef"] },
+  { name: "Viamaailma", logo: viaLogo, produce: ["chicken", "pork", "beef"] },
 ];
 
 export const goals = [

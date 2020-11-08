@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./assets/main.css";
 import StickerPage from "./StickerPage";
-// import { stickers } from "./data";
+import { stickers } from "./data";
 import * as stickerManager from "./stickerManager";
 
 class Home extends Component {
