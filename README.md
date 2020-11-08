@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+## Our idea
+We offer an interactive, informative digital sticker collection world to end-consumers of responsible meat products by HKScan brands. The digital sticker collection world allows end-consumers to collect their stickers upon purchasing a meat product by scanning a unique QR code that is placed inside the product package. Each QR code will be transformed automatically into a brand sticker in the collection world upon scanning. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Once consumers scan their unique QR code, the collection world will be loaded for the consumer and an overview of the sticker collection can be explored. Each sticker contains the brand logo that represents the product that was scanned and links to a comparison of aggregated data of the estimated water footprint, the carbon footprint, the average space per animal, and the average lifespan of an animal species upon clicking. 
 
-## Available Scripts
+The data for our visualizations was partly based on averaged calculations from the water footprint data provided by HKScan as well as global average water footprints for meat production published in scientific research papers for comparison purposes.  
 
-In the project directory, you can run:
+Next to the exploration of the personal sticker collection, the consumer can click on the 'Goals' tab of the website menu to get an overview of all available sustainable project categories that various HKScan selected farms are working on at the moment. Once all stickers are collected by the consumer, hence 15 products have been purchased, the consumer can select a sustainable project category of their choice such as the development of a windmill, a solar panel collection, or a renovation of the animal stables. 
 
-### `yarn start`
+The objective of the sticker collection is thus to enable consumers to support sustainable farming and at the same time engage with the HKScan brand. Consumers can support their preferred projects without choosing one particular farm, but a variety of farms that currently have a project in this category (e.g. making more space for their chickens). 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To give consumers more incentives to complete the sticker collection if needed, a product discount can be introduced that can be redeemed upon completion of 15 stickers in the collection world. The donation for sustainable projects would be contributed by HKScan's customers such as retailing brands in the meat industry. By giving a specified amount of donations per completed sticker book towards the project, brands can increase the engagement with their consumers and at the same time work on their brand awareness and reputation by committing their efforts towards sustainable farming. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To build the web-app, we used React and Tailwind CSS. 
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## How to run
+Run `yarn` to install packages, and then `yarn start` to start the development server.
