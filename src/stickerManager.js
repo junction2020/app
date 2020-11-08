@@ -45,25 +45,25 @@ export function getStickersByPage(pageIndex) {
 }
 
 export function getPledgedPages() {
-    let pledgedPages = localStorage.getItem("pledgedPages");
-    if (pledgedPages) {
-        return JSON.parse(pledgePages);
-    } else {
-        localStorage.setItem("pledgedPages", JSON.stringify([]));
-        return [];
-    }
+  let pledgedPages = localStorage.getItem("pledgedPages");
+  if (pledgedPages) {
+    return JSON.parse(pledgedPages);
+  } else {
+    localStorage.setItem("pledgedPages", JSON.stringify([]));
+    return [];
+  }
 }
 
 export function isPagePledged(pageIndex) {
-    let pledgedPages = localStorage.getItem("pledgedPages");
-    return pledgedPages.includes(pageIndex);
+  let pledgedPages = localStorage.getItem("pledgedPages");
+  return pledgedPages.includes(pageIndex);
 }
 
 export function pledgePage(pageIndex) {
-    let pledgedPages = getPledgedPages();
-    if (!pledgedPages) {
-      pledgedPages = [];
-    }
-    pledgedPages.push(pageIndex);
-    localStorage.setItem("pledgedPages", JSON.stringify(pledgedPages));
+  let pledgedPages = getPledgedPages();
+  if (!pledgedPages) {
+    pledgedPages = [];
+  }
+  pledgedPages.push(pageIndex);
+  localStorage.setItem("pledgedPages", JSON.stringify(pledgedPages));
 }
