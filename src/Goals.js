@@ -35,7 +35,10 @@ class Goals extends Component {
       <div className="mt-20 container mx-auto">
         <div className="flex flex-wrap -mx-2">
           {goals.map((goal, i) => (
-            <div key={i} className="flex h-auto items-stretch w-full sm:w-1/2 md:w-1/3 mb-12 h-12 px-4">
+            <div
+              key={i}
+              className="flex h-auto items-stretch w-full sm:w-1/2 md:w-1/3 mb-12 h-12 px-4"
+            >
               <div className="relative rounded overflow-hidden shadow-lg h-full">
                 {pageIndex &&
                   <div className="absolute right-0 top-0 mt-2">
@@ -55,10 +58,20 @@ class Goals extends Component {
                   alt="Sunset in the mountains"
                 />
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">{goal.title}</div>
-                  <p className="text-gray-700 text-base">
-                    {goal.description}
-                  </p>
+                  {/*<div className="col-span-2">*/}
+                  {/*  <div className="font-bold text-xl mb-2">{goal.title}</div>*/}
+                  {/*  <img src={goal.brand.logo} alt={"altlogo"} />*/}
+                  {/*</div>*/}
+                  <div className="flex justify-between">
+                    <div className="font-bold text-xl mb-2">{goal.title}</div>
+                    <img
+                      src={goal.brand.logo}
+                      alt={"altlogo"}
+                      className="w-10"
+                    />
+                  </div>
+
+                  <p className="text-gray-700 text-sm">{goal.description}</p>
                 </div>
                 <div className="px-6 pb-6">
                   <div className="w-full rounded bg-grey-light mt-2">
