@@ -38,7 +38,7 @@ class Home extends Component {
 
   render() {
     let pledged = stickerManager.getPledgedPages();
-    console.log(pledged);
+    console.log(this.state.currentPage);
     return (
       <div>
         <StickerPage stickers={this.state.currentPage} />
@@ -47,7 +47,7 @@ class Home extends Component {
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
             onClick={this.previousPage}>Previous</button>
           ) : <span></span>}
-          {!stickerManager.isPagePledged(this.state.currentPage) ? (
+          {!stickerManager.isPagePledged(this.state.currentPage) && this.state.currentPage.length === 15 ? (
             <Link to={"goals/" + this.state.pageIndex}>
               <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">Choose goal</button>
             </Link>
