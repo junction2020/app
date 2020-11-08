@@ -44,10 +44,26 @@ export function getStickersByPage(pageIndex) {
   return stickers.slice(begin, end);
 }
 
-export function pledgePage(pageIndex) {
-
+export function getPledgedPages() {
+    let pledgedPages = localStorage.getItem("pledgedPages");
+    if (pledgedPages) {
+        return JSON.parse(pledgePages);
+    } else {
+        localStorage.setItem("pledgedPages", JSON.stringify([]));
+        return [];
+    }
 }
 
-export function getPledgedPages() {
-    
+export function isPagePledged(pageIndex) {
+    let pledgedPages = localStorage.getItem("pledgedPages");
+    return pledgedPages.includes(pageIndex);
+}
+
+export function pledgePage(pageIndex) {
+    let pledgedPages = getPledgedPages();
+    if (!pledgedPages) {
+      pledgedPages = [];
+    }
+    pledgedPages.push(pageIndex);
+    localStorage.setItem("pledgedPages", JSON.stringify(pledgedPages));
 }
