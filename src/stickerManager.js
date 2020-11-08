@@ -55,15 +55,10 @@ export function getPledgedPages() {
 }
 
 export function isPagePledged(pageIndex) {
-  console.log("is ", pageIndex, "pledged?")
   let pledgedPages = getPledgedPages();
   if (pledgedPages) {
-    console.log(Object.keys(pledgedPages));
-    let result = Object.keys(pledgedPages).some((v => v === pageIndex.toString()));
-    console.log(result);
-    return result;
+    return Object.keys(pledgedPages).some((v => v === pageIndex.toString()));
   } else {
-    console.log("No.")
     return false;
   }
 }
