@@ -43,3 +43,11 @@ export function getStickersByPage(pageIndex) {
   let end = begin + 15;
   return stickers.slice(begin, end);
 }
+
+export function pledgePage(pageIndex) {
+
+}
+
+export function getPledgedPages() {
+    
+}

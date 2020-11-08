@@ -4,7 +4,6 @@ import chickenjpg from "./assets/chicken-vector-illustration.png";
 
 class StickerPage extends Component {
   render() {
-    console.log("stickers", this.props.stickers);
     return (
       <div className="mt-20 container mx-auto w-full lg:w-4/5 xl:w-1/2">
         <div className="border-solid border-8 border-green-400 rounded-b-2xl rounded-t-2xl flex flex-wrap h-full pt-12 bg-gradient-to-r from-teal-400 to-blue-500">
