@@ -13,7 +13,7 @@ export const barChartData = (i, label) => {
 	let rest = Object.values(farmData[i][1]).filter((item, i) => i<4).map(val => val+(Math.random()-0.5)*val )
 	return {
 		labels: [
-			"Footprint", "CO2", "Sq. per animal", "Lifespan"
+			"Water footprint", "Carbon footprint", "Sq. per animal", "Lifespan"
 		],
 		datasets: [{
 			label: label,

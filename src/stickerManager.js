@@ -19,8 +19,8 @@ function saveSticker(sticker) {
     localStorage.setItem("stickers", JSON.stringify(stickers));
 }
 
-function selectRandomBrand() {
-    return brands.slice(0, 4)[Math.floor(Math.random() * brands.length)];
+function selectRandomBrand(id) {
+    return brands.slice(0, 4)[id];
 }
 
 function selectRandomImageUrl() {
@@ -28,10 +28,12 @@ function selectRandomImageUrl() {
 }
 
 export function generateNewSticker(id) {
+    console.log("Creating new sticker for id:", id);
+    let new_id = Math.floor(Math.random() * 4);
     const newSticker = {
-        id,
+        id: new_id,
         img_url: selectRandomImageUrl(),
-        brand: selectRandomBrand()
+        brand: selectRandomBrand(new_id)
     };
     saveSticker(newSticker);
 }
