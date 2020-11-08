@@ -1,5 +1,8 @@
 import windmillJpg from "./assets/real_windmills.jpg";
 import chickenjpg from "./assets/chicken-vector-illustration.png";
+import wheatfield from "./assets/wheatfield.jpg";
+import chickensauna from "./assets/sauna.jpg";
+import parkinglot from "./assets/parkinglot.jpg";
 export const brands = [
   { name: "Kariniemen" },
   { name: "HK" },
@@ -21,7 +24,7 @@ export const goals = [
     description:
       "We don't have much homegrown food ready. We suggest creating a wheatfield that is targeted towards and maintained by our own chicken population.",
     progress: 0.48,
-    img_url: windmillJpg,
+    img_url: wheatfield,
   },
   {
     title: "Chicken Sauna",
@@ -29,13 +32,13 @@ export const goals = [
     description:
       "The chickens here in Finland do not have many places to just put their legs up and relax. We would like to change this. This is why we want to build a brand new Chicken coop with a sauna theme, that provides ideal 90 degree sauna heating.",
     progress: 0.79,
-    img_url: windmillJpg,
+    img_url: chickensauna,
   },
   {
     title: "Newer Windmill",
     brand: brands[0],
     description:
-      "We have a lot of wind and want to catch it, so we want to build a big windmill in our backyard.",
+      "We have a lot of wind and want to catch even more, so we want to build a second windmill in our backyard.",
     progress: 0.13,
     img_url: windmillJpg,
   },
@@ -45,7 +48,7 @@ export const goals = [
     description:
       "There's an empty lot we are only paying the rent on. Help us populate this today!",
     progress: 0.34,
-    img_url: windmillJpg,
+    img_url: parkinglot,
   },
 ];
 

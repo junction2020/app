@@ -11,7 +11,7 @@ class Header extends Component {
               href="/"
               className="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg focus:outline-none focus:shadow-outline"
             >
-              HKScan Sticker Collection World 🌱
+              Sticker Collection World 🌱
             </a>
           </div>
           <nav className="flex-col space-x-4 flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
