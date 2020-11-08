@@ -39,8 +39,8 @@ class Home extends Component {
     let isPledged = stickerManager.isPagePledged(this.state.pageIndex);
     return (
       <div>
-        <div className="flex justify-center mt-5">
-          Sticker Page {this.state.pageIndex + 1}
+        <div className="flex justify-center mt-5 text-2xl font-semibold tracking-widest text-gray-900 uppercase rounded-lg focus:outline-none focus:shadow-outline">
+          Sticker Page {this.state.pageIndex + 1} 🤓
         </div>
         <StickerPage stickers={this.state.currentPage} />
         <div class="flex justify-around mt-8">
