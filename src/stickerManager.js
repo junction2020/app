@@ -28,11 +28,15 @@ function selectRandomImageUrl() {
 }
 
 export function generateNewSticker(id) {
-    console.log("Creating new sticker for id:", id);
     const newSticker = {
         id,
         img_url: selectRandomImageUrl(),
         brand: selectRandomBrand()
     };
     saveSticker(newSticker);
+}
+
+export function getAmountOfPages() {
+    let amountOfStickers = loadStickers().length;
+    return Math.ceil(amountOfStickers / 15);
 }
