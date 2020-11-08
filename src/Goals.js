@@ -18,6 +18,16 @@ class Goals extends Component {
     })
   }
 
+  componentDidMount() {
+    if (this.props.match.params.pageIndex) {
+      let pledgedPages = stickerManager.getPledgedPages();
+      this.setState({
+        pledgedPages,
+        pledgedIndex: pledgedPages[this.props.match.params.pageIndex] 
+      })
+    }
+  }
+
   render() {
     let pageIndex = this.props.match.params.pageIndex;
     let isOnPledgedPage = pageIndex ? stickerManager.isPagePledged(pageIndex) : false;
@@ -34,7 +44,7 @@ class Goals extends Component {
                       onClick={() => this.onPledgeClick(i)}
                       disabled={isOnPledgedPage}
                     >
-                      {isOnPledgedPage ? "Thanks! 🌎❤️" : "⭐ Pledge now!"}
+                      {!isOnPledgedPage ? "⭐ Pledge now!" : (this.state.pledgedIndex === i ? "Thanks! 🌎❤️" : "⭐ Pledge now!")}
                   </button>
                   </div>
                 }
