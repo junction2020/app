@@ -8,6 +8,7 @@ import kariniemenLogo from "./assets/kariniemen_logo_135px.png";
 import viaLogo from "./assets/via-logo.png";
 import manureJpg from "./assets/manure.jpeg";
 import traceJpg from "./assets/livestock.jpg";
+import solarbarn from "./assets/solarbarn.jpg";
 
 export const brands = [
   { name: "Kariniemen", logo: kariniemenLogo, produce: ["chicken"] },
@@ -49,12 +50,20 @@ export const goals = [
     img_url: traceJpg,
   },
   {
-    title: "L",
+    title: "Biosecurity on Our Farms",
     brand: brands[1],
     description:
-      "There's an empty lot we are only paying the rent on. Help us populate this today!",
+      "Taking better preventative measures can minimise the risk of entry and spread of diseases on the farm. Our goal is to setup a regular check-up routine for our farms by certified animal virus and desease outbreak teams. Can we count on you to help us reach this goal?",
     progress: 0.34,
     img_url: parkinglot,
+  },
+  {
+    title: "Solar-Powered Farms",
+    brand: brands[2],
+    description:
+      "Solar-powered farms  are still seldomly seen, but the growing use of solar power for farming could soon give rise to a new type of farm –the one which could sustain itself for a much longer amount of time, and also contribute to the reduction of the fossil fuel usage!",
+    progress: 0.54,
+    img_url: solarbarn,
   },
 ];
 
