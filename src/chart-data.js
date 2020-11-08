@@ -7,7 +7,8 @@ const farmData = [
 	{"footprint": 630, "co2": 2300, "sq_animal": 5, "lifespan": 1.5, "outdoor": "no", "antibiotic": "yes"}]
 ];
 
-export const barChartData = (i) => {
+
+export const barChartData = (i, label) => {
 	let hkscan = Object.values(farmData[i][0]).filter((item, i) => i<4).map(val => val+(Math.random()-0.5)*val )
 	let rest = Object.values(farmData[i][1]).filter((item, i) => i<4).map(val => val+(Math.random()-0.5)*val )
 	return {
@@ -15,7 +16,7 @@ export const barChartData = (i) => {
 			"Footprint", "CO2", "Sq. per animal", "Lifespan"
 		],
 		datasets: [{
-			label: 'HKScan',
+			label: label,
 			data: hkscan,
 			backgroundColor: ["#843AF4", "#843AF4", "#843AF4", "#843AF4"]
 		},

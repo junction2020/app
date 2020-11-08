@@ -3,10 +3,6 @@ import { Component } from "react";
 import chickenjpg from "./assets/chicken-vector-illustration.png";
 
 class StickerPage extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="mt-20 container mx-auto px-20 stickercard">
