@@ -1,4 +1,5 @@
-import { stickers as stickerJson, brands, stickers } from "./data";
+import { brands } from "./data";
+import * as moment from "moment";
 
 export function loadStickers() {
   let stickers = localStorage.getItem("stickers");
@@ -28,6 +29,7 @@ export function generateNewSticker(id) {
   const newSticker = {
     id: new_id,
     brand: selectRandomBrand(new_id),
+    timestamp: moment.now()
   };
   saveSticker(newSticker);
 }
@@ -45,13 +47,13 @@ export function getStickersByPage(pageIndex) {
 }
 
 export function getPledgedPages() {
-    let pledgedPages = localStorage.getItem("pledgedPages");
-    if (pledgedPages) {
-        return JSON.parse(pledgedPages);
-    } else {
-        localStorage.setItem("pledgedPages", JSON.stringify({}));
-        return {};
-    }
+  let pledgedPages = localStorage.getItem("pledgedPages");
+  if (pledgedPages) {
+    return JSON.parse(pledgedPages);
+  } else {
+    localStorage.setItem("pledgedPages", JSON.stringify({}));
+    return {};
+  }
 }
 
 export function isPagePledged(pageIndex) {
