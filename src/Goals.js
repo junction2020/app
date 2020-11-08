@@ -2,32 +2,42 @@ import { Component } from "react";
 import "./assets/main.css";
 import { goals } from "./data";
 import { withRouter } from "react-router-dom";
+import * as stickerManager from "./stickerManager";
 
 class Goals extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { isToggleOn: true };
-  }
+  state = {
+    pledgedPages: {},
+    pledgedIndex: null
+  };
 
-  handleClick() {
-    this.setState((state) => ({
-      isToggleOn: !state.isToggleOn,
-    }));
+  onPledgeClick(index) {
+    stickerManager.pledgePage(this.props.match.params.pageIndex, index);
+    this.setState({
+      pledgedPages: stickerManager.getPledgedPages(),
+      pledgedIndex: index
+    })
   }
 
   render() {
-    console.log("Goals location state:", this.props.match.params.pageIndex);
+    let pageIndex = this.props.match.params.pageIndex;
+    let isOnPledgedPage = pageIndex ? stickerManager.isPagePledged(pageIndex) : false;
     return (
       <div className="mt-20 container mx-auto">
         <div className="flex flex-wrap -mx-2">
           {goals.map((goal, i) => (
             <div key={i} className="flex h-auto items-stretch w-full sm:w-1/2 md:w-1/3 mb-12 h-12 px-4">
               <div className="relative rounded overflow-hidden shadow-lg h-full">
-                <div className="absolute right-0 top-0 mt-2">
-                  <span className="inline-block text-gray-900 bg-gray-200 rounded px-3 py-1 text-sm font-semibold mr-2 mb-2">
-                    active
-                  </span>
-                </div>
+                {pageIndex &&
+                  <div className="absolute right-0 top-0 mt-2">
+                    <button
+                      className={"text-white font-bold py-2 px-4 border border-blue-700 rounded mr-2 " + (isOnPledgedPage ? "bg-gray-500 hover:bg-gray-700 cursor-not-allowed" : "bg-green-500 hover:bg-green-700")}
+                      onClick={() => this.onPledgeClick(i)}
+                      disabled={isOnPledgedPage}
+                    >
+                      {isOnPledgedPage ? "Thanks! 🌎❤️" : "⭐ Pledge now!"}
+                  </button>
+                  </div>
+                }
 
                 <img
                   className="w-full"
