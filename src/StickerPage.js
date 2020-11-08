@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Component } from "react";
 import chickenjpg from "./assets/chicken-vector-illustration.png";
+import Tilt from "react-tilt";
 
 class StickerPage extends Component {
   render() {
@@ -12,15 +13,17 @@ class StickerPage extends Component {
               key={i}
               className="h-auto items-stretch w-1/3 mb-12 h-3 flex justify-center"
             >
-              <Link to={"sticker/" + sticker.id}>
-                <div className="rounded-full w-16 md:w-32 h-16 md:h-32 md:p-5 ml-5 mr-5 md:ml-20 md:mr-20 bg-gray-300 flex justify-center items-center">
-                  <img
-                    className={`object-contain w-full placeholder_chicken`}
-                    src={sticker.brand.logo}
-                    alt={"unicorn" + i}
-                  />
-                </div>
-              </Link>
+              <Tilt className="Tilt" options={{ max: 25 }}>
+                <Link to={"sticker/" + sticker.id}>
+                  <div className="rounded-full w-16 md:w-32 h-16 md:h-32 md:p-5 ml-5 mr-5 md:ml-20 md:mr-20 bg-gray-300 flex justify-center items-center">
+                    <img
+                      className={`object-contain w-full placeholder_chicken`}
+                      src={sticker.brand.logo}
+                      alt={"unicorn" + i}
+                    />
+                  </div>
+                </Link>
+              </Tilt>
             </div>
           ))}
           {this.props.stickers.length < 15 &&
@@ -29,12 +32,14 @@ class StickerPage extends Component {
                 key={index}
                 className="h-auto items-stretch w-1/3 mb-12 h-3 flex justify-center"
               >
-                <div className="rounded-full w-16 md:w-32 h-16 md:h-32 md:p-5 ml-5 mr-5 md:ml-20 md:mr-20 flex items-center justify-center bg-gray-300">
-                  <img
-                    className={`object-contain w-full placeholder_chicken img-gray`}
-                    src={chickenjpg}
-                    alt={"unicorn" + index}
-                  />
+                <div className="Tilt-inner">
+                  <div className="rounded-full w-16 md:w-32 h-16 md:h-32 md:p-5 ml-5 mr-5 md:ml-20 md:mr-20 flex items-center justify-center bg-gray-300">
+                    <img
+                      className={`object-contain w-full placeholder_chicken img-gray`}
+                      src={chickenjpg}
+                      alt={"unicorn" + index}
+                    />
+                  </div>
                 </div>
               </div>
             ))}
