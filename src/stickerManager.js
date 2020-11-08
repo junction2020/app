@@ -49,21 +49,32 @@ export function getPledgedPages() {
     if (pledgedPages) {
         return JSON.parse(pledgedPages);
     } else {
-        localStorage.setItem("pledgedPages", JSON.stringify([]));
-        return [];
+        localStorage.setItem("pledgedPages", JSON.stringify({}));
+        return {};
     }
 }
 
 export function isPagePledged(pageIndex) {
-  let pledgedPages = localStorage.getItem("pledgedPages");
-  return pledgedPages.includes(pageIndex);
+  console.log("is ", pageIndex, "pledged?")
+  let pledgedPages = getPledgedPages();
+  if (pledgedPages) {
+    console.log(Object.keys(pledgedPages));
+    let result = Object.keys(pledgedPages).some((v => v === pageIndex.toString()));
+    console.log(result);
+    return result;
+  } else {
+    console.log("No.")
+    return false;
+  }
 }
 
-export function pledgePage(pageIndex) {
+export function pledgePage(pageIndex, goalIndex) {
+  console.log("Pledging page:", pageIndex, "for goal", goalIndex)
   let pledgedPages = getPledgedPages();
   if (!pledgedPages) {
-    pledgedPages = [];
+    pledgedPages = {};
   }
-  pledgedPages.push(pageIndex);
+  pledgedPages[pageIndex] = goalIndex;
+  console.log("PledgedPages:", pledgedPages)
   localStorage.setItem("pledgedPages", JSON.stringify(pledgedPages));
 }

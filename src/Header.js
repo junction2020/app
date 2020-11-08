@@ -14,7 +14,7 @@ class Header extends Component {
               Sticker Collection World 🌱
             </a>
           </div>
-          <nav className="flex-col space-x-4 flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+          <nav className="flex-col space-x-4 flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
             <Link
               type="button"
               to="/"
