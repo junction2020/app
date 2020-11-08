@@ -10,7 +10,7 @@ class StickerPage extends Component {
           {this.props.stickers.slice(0, 15).map((sticker, i) => (
             <div key={i} className="h-auto items-stretch w-1/3 mb-12 h-3 flex justify-center">
               <Link to={"sticker/" + sticker.id}>
-                <div className="rounded-full w-16 md:w-32 h-16 md:h-32 md:p-5 ml-5 mr-5 md:ml-20 md:mr-20 bg-gray-300 flex justify-center items-center">
+                <div className="rounded-full w-16 md:w-32 h-16 md:h-32 md:p-5 ml-5 mr-5 md:ml-20 md:mr-20 bg-gray-300 flex justify-center items-center growing">
                   <img
                     className={`object-contain w-full placeholder_chicken`}
                     src={sticker.brand.logo}

@@ -5,8 +5,8 @@ body {
   --orchid-crayola: #fea7df;
   --jet: #343434;
   margin-top: 2em;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,19 +14,27 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .img-gray {
-    filter: contrast(0) sepia(100%) hue-rotate(116deg) brightness(1.2) saturate(0.0);
+  filter: contrast(0) sepia(100%) hue-rotate(116deg) brightness(1.2) saturate(0);
 }
 
 .stickercard {
-  width: 55.333333%!important;
+  width: 55.333333% !important;
 }
 
 .placeholder_chicken {
   width: 51px;
   height: 51px;
+}
+
+.growing {
+  transition: transform 0.3s;
+}
+
+.growing:hover {
+  transform: scale(1.1);
 }
