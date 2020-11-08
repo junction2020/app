@@ -23,12 +23,7 @@ function selectRandomBrand(id) {
   return brands[id];
 }
 
-function selectRandomImageUrl() {
-  return stickerJson.slice(0, 4)[Math.floor(Math.random() * 4)].sticker_image;
-}
-
 export function generateNewSticker(id) {
-  console.log("Creating new sticker for id:", id);
   let new_id = Math.floor(Math.random() * 3);
   const newSticker = {
     id: new_id,
