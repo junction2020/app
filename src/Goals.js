@@ -1,6 +1,7 @@
 import { Component } from "react";
 import "./assets/main.css";
 import { goals } from "./data";
+import { withRouter } from "react-router-dom";
 
 class Goals extends Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class Goals extends Component {
   }
 
   render() {
-    console.log("Goals available:", goals);
+    console.log("Goals location state:", this.props.match.params.pageIndex);
     return (
       <div className="mt-20 container mx-auto">
         <div className="flex flex-wrap -mx-2">
@@ -58,4 +59,4 @@ class Goals extends Component {
   }
 }
 
-export default Goals;
+export default withRouter(Goals);

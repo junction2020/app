@@ -5,17 +5,11 @@ import * as stickers from "./stickerManager";
  
 class Reader extends Component {
   
-  state = {
-    result: 'No result'
-  };
-  
   handleScan = data => {
     if (data) {
-      this.props.history.push(`/`)
       stickers.generateNewSticker(data);
-      this.setState({
-        result: data
-      })
+      this.props.history.push(`/`)
+    
     }
   }
   
@@ -38,7 +32,6 @@ class Reader extends Component {
         >
           fake result
         </button>
-        <p>{this.state.result}</p>
       </div>
     )
   }

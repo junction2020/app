@@ -24,7 +24,7 @@ class App extends Component {
           <Route path="/code">
             <Code />
           </Route>
-          <Route path="/goals">
+          <Route path="/goals/:pageIndex?">
             <Goals />
           </Route>
           <Route path="/sticker/:id" component={Sticker} />
