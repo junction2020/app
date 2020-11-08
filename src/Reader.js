@@ -4,9 +4,6 @@ import { withRouter } from "react-router-dom";
 import * as stickers from "./stickerManager";
  
 class Reader extends Component {
-  constructor(props) {
-    super(props);
-  }
   
   state = {
     result: 'No result'
