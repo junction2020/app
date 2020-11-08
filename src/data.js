@@ -6,6 +6,8 @@ import parkinglot from "./assets/parkinglot.jpg";
 import hkLogo from "./assets/hk-logo-small.png";
 import kariniemenLogo from "./assets/kariniemen_logo_135px.png";
 import viaLogo from "./assets/via-logo.png";
+import manureJpg from "./assets/manure.jpeg";
+import traceJpg from "./assets/livestock.jpg";
 
 export const brands = [
   { name: "Kariniemen", logo: kariniemenLogo, produce: ["chicken"] },
@@ -16,38 +18,38 @@ export const brands = [
 export const goals = [
   {
     title: "New Windmill",
-    brand: brands[0],
+    brand: brands[1],
     description:
-      "We have a lot of wind and want to catch it, so we want to build a big windmill in our backyard.",
+      "Wind energy is a sustainable  and scalable energy source that can deliver clean, reliable and secure electricity to the grid at reasonable costs. Our farms use more and more green energy, and by contributing to the construction of a new windmill in the Pylkönmäki  district we are hoping to accelerate this process.",
     progress: 0.11,
     img_url: windmillJpg,
   },
   {
     title: "Chicken-tended Wheatfield",
-    brand: brands[1],
+    brand: brands[0],
     description:
-      "We don't have much homegrown food ready. We suggest creating a wheatfield that is targeted towards and maintained by our own chicken population.",
+      "We don't have much homegrown food ready. We would like you to help us to create a wheatfield that is targeted towards and maintained by our own chicken population!",
     progress: 0.48,
     img_url: wheatfield,
   },
   {
-    title: "Chicken Sauna",
+    title: "Manure Management System",
     brand: brands[2],
     description:
-      "The chickens here in Finland do not have many places to just put their legs up and relax. We would like to change this. This is why we want to build a brand new Chicken coop with a sauna theme, that provides ideal 90 degree sauna heating.",
+      "The manure and waste produced by pigs and the way in which it is managed is a top environmental concern. Therefore, we strive to develop well-designed manure management system for our pigs, which utilizes vegetative windbreaks plant buffers or fan filters that minimize the movement of dust and odor.",
     progress: 0.79,
-    img_url: chickensauna,
+    img_url: manureJpg,
   },
   {
-    title: "Newer Windmill",
+    title: "Improved Animal Tracebility",
     brand: brands[0],
     description:
-      "We have a lot of wind and want to catch even more, so we want to build a second windmill in our backyard.",
+      "We want our animals to be fully traceable from birth. Transparency in this aspect of animal background handling can make a difference in performing proper care for the farm animals, such as selecting the proper medication or treatment.",
     progress: 0.13,
-    img_url: windmillJpg,
+    img_url: traceJpg,
   },
   {
-    title: "Chickens",
+    title: "L",
     brand: brands[1],
     description:
       "There's an empty lot we are only paying the rent on. Help us populate this today!",
